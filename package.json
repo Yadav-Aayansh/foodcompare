@@ -1,0 +1,21 @@
+{
+  "name": "foodcompare",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Read-only Swiggy/Zomato price comparison across multiple accounts",
+  "bin": {
+    "foodcompare": "./src/cli.ts",
+    "foodcompare-mcp": "./src/mcp-server.ts"
+  },
+  "scripts": {
+    "compare": "node src/cli.ts",
+    "test": "node --test test/*.test.ts",
+    "typecheck": "tsc -p tsconfig.json",
+    "mcp": "node src/mcp-server.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}
